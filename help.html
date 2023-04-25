@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flood Relief</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylehelp.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <a href="index.html">Floods</a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+            <li class="nav-item"><a href="live.html" class="nav-link">Live Floods</a></li>
+            <li class="nav-item"><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li class="nav-item"><a href="help.html" class="nav-link active">Help</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Flood Help Chatbot</h1>
+  <div id="chat-area"></div>
+  <form>
+    <input type="text" id="user-input" placeholder="Enter your message">
+    <button type="submit" id="send-btn">Get Help</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      const chatArea = $('#chat-area');
+      const userInput = $('#user-input');
+      const sendBtn = $('#send-btn');
+
+      const responses = [
+        "Please call 112 immediately if you are in immediate danger.",
+        "Turn off electricity, gas, and water if instructed to do so by local authorities.",
+        "Do not walk through moving water, if possible. Six inches of moving water can make you fall.",
+        "Do not drive into flooded areas. If floodwaters rise around your car, abandon the car and move to higher ground if you can do so safely.",
+        "Stay informed with up-to-date information from trusted sources such as local authorities or the National Weather Service.",
+        "Stay away from floodwaters. If you come upon a flowing stream where water is above your ankles, stop, turn around and go another way.",
+        "Be aware of areas where floodwaters have receded. Roads may have weakened and could collapse under the weight of a car.",
+        "Avoid contact with floodwater due to potential contamination.",
+        "If you are in immediate danger, call the National Disaster Response Force (NDRF) at 1070 or the State Emergency Operation Centre at 1079.",
+        "Avoid going outside during a flood. If you must go outside, wear protective clothing and footwear.",
+        "Do not attempt to drive through a flooded area. Turn around and find an alternate route.",
+        "If you are trapped in your home during a flood, move to the highest level and wait for rescue.",
+        "If you are caught in a flash flood, climb to higher ground immediately.",
+        "Avoid contact with floodwaters, which may be contaminated with sewage and other hazardous substances.",
+        "Boil or treat all water before drinking it, including tap water, during a flood.",
+        "Stay informed with up-to-date information from local authorities and news outlets.",
+        "Create an emergency kit with food, water, medications, and other essential supplies.",
+        "If you must evacuate your home, turn off all utilities and unplug appliances.",
+        "Follow the instructions of local authorities, including evacuation orders.",
+        "If you are in a vehicle during a flood, abandon it and move to higher ground on foot.",
+        "Do not touch electrical equipment if you are wet or standing in water.",
+        "If you must enter floodwaters, wear rubber boots and gloves.",
+        "Be aware of snakes, insects, and other animals that may be displaced during a flood.",
+        "If you have a basement, make sure it is properly sealed and equipped with a sump pump.",
+        "Check with your insurance company to see if flood damage is covered under your policy.",
+        "Stay away from downed power lines and report them to the authorities.",
+        "Be aware of landslide risks during and after a flood.",
+        "If you see someone trapped in floodwaters, call for help immediately.",
+        "Make sure you have a charged phone and a portable charger during a flood.",
+        "Do not use candles or open flames during a flood.",
+        "If you have a generator, make sure it is properly ventilated to avoid carbon monoxide poisoning.",
+        "Check on your neighbors, especially the elderly and those with disabilities.",
+        "If you are in a low-lying area, seek higher ground before a flood hits.",
+        "Be prepared to evacuate at a moment's notice.",
+        "If you are in a rural area, be aware of flash floods caused by heavy rain.",
+        "If you have pets, make sure they have food, water, and shelter during a flood.",
+        "Stay away from bridges and other structures that may be weakened by floodwaters.",
+        "If you are in a vehicle that is swept away by floodwaters, climb onto the roof and wait for rescue.",
+        "If you are in a multi-story building, move to the highest level during a flood.",
+        "If you must use a boat during a flood, wear a life jacket and stay away from power lines.",
+        "Be prepared to move quickly if the situation changes.",
+        "If you are evacuating your home, bring important documents with you, such as passports and birth certificates.",
+        "Keep a first aid kit and medication with you during a flood.",
+        "Be aware of the risks of electrocution during a flood.",
+        "If you are trapped in a vehicle during a flood, try to break a window and escape.",
+        "Stay away from water that is above your knees, as it may be too deep to cross safely.",
+        "Make sure your car has enough fuel to evacuate during a flood.",
+
+      ];
+
+      function getBotResponse() {
+        const randomIndex = Math.floor(Math.random() * responses.length);
+        return responses[randomIndex];
+      }
+
+      function addUserMessage(message) {
+        chatArea.append(`<div class="user-message">${message}</div>`);
+        chatArea.scrollTop(chatArea.prop('scrollHeight'));
+      }
+
+      function addBotMessage(message) {
+        chatArea.append(`<div class="bot-message">${message}</div>`);
+        chatArea.scrollTop(chatArea.prop('scrollHeight'));
+      }
+
+      $('form').submit(function(event) {
+        event.preventDefault();
+        const userMessage = userInput.val();
+        addUserMessage(userMessage);
+        const botMessage = getBotResponse();
+        addBotMessage(botMessage);
+        userInput.val('');
+      });
+    });
+  </script>
+    <footer>
+      <p>&copy; 2023 Flood Relief</p>
+    </footer>
+  </body>
+</html>

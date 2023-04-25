@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flood Relief</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <a href="index.html">Floods</a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+            <li class="nav-item"><a href="live.html" class="nav-link active">Live Floods</a></li>
+            <li class="nav-item"><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li class="nav-item"><a href="help.html" class="nav-link">Help</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <style>
+        #contact_form {
+          align-self: center;
+          position: relative;
+          top: 100px;
+        }
+      </style>
+      
+      <form action="https://floodlist.com/" method="post" id="contact_form">
+        <div class="imgcontainer">
+          <img src="https://www.w3schools.com/howto/img_avatar2.png" style="width: 200px; height: 200px;" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit">Login to access live flood data.</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="index.html">password?</a></span>
+        </div>
+      </form>
+    <footer>
+      <p>&copy; 2023 Flood Relief</p>
+    </footer>
+  </body>
+</html>

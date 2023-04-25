@@ -1,0 +1,117 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 30px;
+  }
+  
+  #chat-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  #chat-area {
+    height: 400px;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+  
+  .user-message {
+    margin-left: auto;
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .bot-message {
+    margin-right: auto;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  #user-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  #user-message {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  #user-input button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #user-input button:hover {
+    background-color: #2980b9;
+  }
+  #chat-area {
+    margin-top: 80px; /* adjust the value to fit your navbar height */
+  }
+  .bot-message {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    color: #333;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .bot-message:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #f1f1f1;
+    border-bottom: 10px solid transparent;
+  }
+  #chat-area {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+  }
+  .user-message {
+    background-color: #d1e7dd;
+    color: #155724;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .bot-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }

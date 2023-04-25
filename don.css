@@ -1,0 +1,1400 @@
+/* layout variables */
+/* form field widths */
+/* colors */
+/* lightbox */
+/* breakpoints */
+.wrapper {
+    position: relative;
+    float: left;
+    width: 100%; }
+    .wrapper .container {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: calc(100% - 40px);
+      max-width: 800px; }
+  
+  .en__component.en__component--column {
+    min-width: 0; }
+  
+  #header .logo-wrap {
+    padding: 16px;
+    line-height: 0; }
+    #header .logo-wrap a img, #header .logo-wrap a svg {
+      max-height: 40px;
+      width: auto; }
+  
+  #feature {
+    position: relative;
+    float: left;
+    width: 100%;
+    line-height: 0;
+    background: #000; }
+    #feature img {
+      display: block;
+      margin: 0 auto;
+      max-width: 1700px;
+      width: 100%;
+      height: auto; }
+  
+  #footer {
+    padding: 60px 0 100px;
+    background-color: #262626;
+    color: #c6c6c6;
+    font-size: 12px;
+    line-height: 1.4; }
+    #footer h3 {
+      color: #fff;
+      line-height: 1.5;
+      letter-spacing: .5px;
+      font-weight: 300;
+      font-family: "GeographWeb",sans-serif; }
+    #footer p {
+      margin: 0 0 1.46667em 0;
+      line-height: 1.5;
+      letter-spacing: .5px;
+      font-weight: 300;
+      font-size: 12px;
+      font-family: "GeographWeb",sans-serif; }
+    #footer a, #footer .dialog-prompt {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer; }
+    #footer .col {
+      position: relative;
+      float: left; }
+      #footer .col:nth-of-type(1) {
+        width: 33%;
+        margin-right: 20px; }
+      #footer .col:nth-of-type(2) {
+        width: calc(67% - 20px); }
+      #footer .col .footer-logo {
+        width: 170px;
+        display: block;
+        margin-bottom: 1.46667em; }
+      #footer .col .geotrust-wrapper {
+        float: right;
+        margin-left: 20px; }
+        #footer .col .geotrust-wrapper a.info {
+          color: #000000;
+          text-decoration: none;
+          font: bold 7px verdana,sans-serif;
+          letter-spacing: .5px;
+          text-align: center;
+          margin: 0px;
+          padding: 0px; }
+  
+  @media screen and (max-width: 768px) {
+    #footer .col:nth-of-type(1) {
+      margin-bottom: 40px; }
+    #footer .col:nth-of-type(1), #footer .col:nth-of-type(2) {
+      width: 100%;
+      margin-right: 0; } }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Thin.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Thin.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Thin.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Thin.woff2") format("woff2");
+    font-weight: 200; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-ThinItalic.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-ThinItalic.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-ThinItalic.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-ThinItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Light.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Light.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Light.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Light.woff2") format("woff2");
+    font-weight: 300; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-LightItalic.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-LightItalic.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-LightItalic.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Regular.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Regular.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Regular.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Regular.woff2") format("woff2");
+    font-weight: 400; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-RegularItalic.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-RegularItalic.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-RegularItalic.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-RegularItalic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Medium.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Medium.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Medium.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Medium.woff2") format("woff2");
+    font-weight: 500; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-MediumItalic.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-MediumItalic.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-MediumItalic.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Bold.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Bold.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Bold.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Bold.woff2") format("woff2");
+    font-weight: 600; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BoldItalic.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BoldItalic.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BoldItalic.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Black.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Black.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Black.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-Black.woff2") format("woff2");
+    font-weight: 700; }
+  
+  @font-face {
+    font-family: 'GeographWeb';
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BlackItalic.eot");
+    src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BlackItalic.eot#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BlackItalic.woff") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/2184/GeographWeb-BlackItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic; }
+  
+  form.en__component, form[name="oneClickDonFrm"] {
+    /* widths of blocks/wrappers */
+    /* basic field wrappers */
+    /* custom fields: donation recurring radios */
+    /* custom fields: donation gift string radios */
+    /* custom fields: donation credit card expiration selects */
+    /* custom fields: ccv and ccv helper */
+    /* custom question fields */ }
+    form.en__component .en__component--formblock, form.en__component .en__component--copyblock, form[name="oneClickDonFrm"] .en__component--formblock, form[name="oneClickDonFrm"] .en__component--copyblock {
+      width: 100%;
+      max-width: 650px;
+      position: relative;
+      float: left; }
+    form.en__component .image-credit, form[name="oneClickDonFrm"] .image-credit {
+      position: relative;
+      float: left;
+      width: 100%;
+      text-align: right;
+      font-style: italic;
+      font-size: 14px;
+      color: #808080;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+    form.en__component .en__field, form[name="oneClickDonFrm"] .en__field {
+      position: relative;
+      float: left;
+      width: 100%;
+      padding-bottom: 18px; }
+      form.en__component .en__field .en__field__label, form.en__component .en__field .en__field__element, form[name="oneClickDonFrm"] .en__field .en__field__label, form[name="oneClickDonFrm"] .en__field .en__field__element {
+        position: relative;
+        float: left; }
+      form.en__component .en__field > .en__field__label, form[name="oneClickDonFrm"] .en__field > .en__field__label {
+        width: calc(49.25% - 10px);
+        margin-right: 10px;
+        margin-top: 6px; }
+      form.en__component .en__field .en__field__element, form[name="oneClickDonFrm"] .en__field .en__field__element {
+        width: 50.75%; }
+        form.en__component .en__field .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field .en__field__element .en__field__item {
+          width: 100%;
+          padding: 0; }
+        form.en__component .en__field .en__field__element input[type="text"], form.en__component .en__field .en__field__element input[type="email"], form.en__component .en__field .en__field__element input[type="tel"], form.en__component .en__field .en__field__element input[type="date"], form.en__component .en__field .en__field__element input[type="number"], form[name="oneClickDonFrm"] .en__field .en__field__element input[type="text"], form[name="oneClickDonFrm"] .en__field .en__field__element input[type="email"], form[name="oneClickDonFrm"] .en__field .en__field__element input[type="tel"], form[name="oneClickDonFrm"] .en__field .en__field__element input[type="date"], form[name="oneClickDonFrm"] .en__field .en__field__element input[type="number"] {
+          padding: 15px;
+          border: 1px solid #d5d5d5;
+          color: #000;
+          width: 100%;
+          border-radius: 4px;
+          display: block; }
+          form.en__component .en__field .en__field__element input[type="text"].error, form.en__component .en__field .en__field__element input[type="email"].error, form.en__component .en__field .en__field__element input[type="tel"].error, form.en__component .en__field .en__field__element input[type="date"].error, form.en__component .en__field .en__field__element input[type="number"].error, form[name="oneClickDonFrm"] .en__field .en__field__element input[type="text"].error, form[name="oneClickDonFrm"] .en__field .en__field__element input[type="email"].error, form[name="oneClickDonFrm"] .en__field .en__field__element input[type="tel"].error, form[name="oneClickDonFrm"] .en__field .en__field__element input[type="date"].error, form[name="oneClickDonFrm"] .en__field .en__field__element input[type="number"].error {
+            border: 1px solid #f00; }
+        form.en__component .en__field .en__field__element input[type="date"]::-webkit-inner-spin-button, form[name="oneClickDonFrm"] .en__field .en__field__element input[type="date"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          display: none; }
+        form.en__component .en__field .en__field__element select, form[name="oneClickDonFrm"] .en__field .en__field__element select {
+          padding: 12px 15px;
+          border: 1px solid #d5d5d5;
+          border-radius: 4px;
+          color: #000;
+          background-color: #fff;
+          line-height: normal;
+          height: 48px;
+          width: 100%;
+          min-width: unset; }
+        form.en__component .en__field .en__field__element textarea, form[name="oneClickDonFrm"] .en__field .en__field__element textarea {
+          border: 1px solid #d5d5d5;
+          border-radius: 4px;
+          color: #000;
+          resize: none;
+          width: 100%; }
+      form.en__component .en__field > label.en__field__label span.temp, form[name="oneClickDonFrm"] .en__field > label.en__field__label span.temp {
+        font-size: 13px;
+        display: block;
+        font-style: italic;
+        margin-top: -5px;
+        line-height: 90%;
+        width: 100%; }
+      form.en__component .en__field.en__field--radio > label.en__field__label, form.en__component .en__field.en__field--checkbox > label.en__field__label, form[name="oneClickDonFrm"] .en__field.en__field--radio > label.en__field__label, form[name="oneClickDonFrm"] .en__field.en__field--checkbox > label.en__field__label {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, calc(-50% - 18px));
+        vertical-align: middle;
+        left: 0;
+        padding: 0; }
+      form.en__component .en__field.en__field--radio .en__field__element, form.en__component .en__field.en__field--checkbox .en__field__element, form[name="oneClickDonFrm"] .en__field.en__field--radio .en__field__element, form[name="oneClickDonFrm"] .en__field.en__field--checkbox .en__field__element {
+        float: right; }
+      form.en__component .en__field.en__field--radio .en__field__item input[type="checkbox"], form.en__component .en__field.en__field--checkbox .en__field__item input[type="checkbox"], form[name="oneClickDonFrm"] .en__field.en__field--radio .en__field__item input[type="checkbox"], form[name="oneClickDonFrm"] .en__field.en__field--checkbox .en__field__item input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+        margin-top: 5px; }
+      form.en__component .en__field.en__field--radio .en__field__item input[type="radio"], form.en__component .en__field.en__field--checkbox .en__field__item input[type="radio"], form[name="oneClickDonFrm"] .en__field.en__field--radio .en__field__item input[type="radio"], form[name="oneClickDonFrm"] .en__field.en__field--checkbox .en__field__item input[type="radio"] {
+        float: left;
+        margin-right: 5px;
+        margin-top: 4px;
+        -moz-appearance: radio !important; }
+      form.en__component .en__field.en__field--radio .en__field__item label, form.en__component .en__field.en__field--checkbox .en__field__item label, form[name="oneClickDonFrm"] .en__field.en__field--radio .en__field__item label, form[name="oneClickDonFrm"] .en__field.en__field--checkbox .en__field__item label {
+        width: calc(100% - 25px); }
+      form.en__component .en__field.en__field--splittext .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field.en__field--splittext .en__field__element .en__field__item {
+        margin-bottom: 9px; }
+        form.en__component .en__field.en__field--splittext .en__field__element .en__field__item:last-of-type, form[name="oneClickDonFrm"] .en__field.en__field--splittext .en__field__element .en__field__item:last-of-type {
+          margin-bottom: 0; }
+      form.en__component .en__field.en__field--splitselect .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field.en__field--splitselect .en__field__element .en__field__item {
+        width: calc(50% - 7px); }
+        form.en__component .en__field.en__field--splitselect .en__field__element .en__field__item:first-of-type, form[name="oneClickDonFrm"] .en__field.en__field--splitselect .en__field__element .en__field__item:first-of-type {
+          margin-right: 10px; }
+      form.en__component .en__field.en__field--rating .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field.en__field--rating .en__field__element .en__field__item {
+        width: auto; }
+      form.en__component .en__field.en__mandatory > label:after, form[name="oneClickDonFrm"] .en__field.en__mandatory > label:after {
+        content: '*';
+        color: #f00;
+        margin-left: 2px; }
+      form.en__component .en__field label.required-fake span, form[name="oneClickDonFrm"] .en__field label.required-fake span {
+        color: #f00;
+        margin-left: 2px; }
+      form.en__component .en__field.en__field--validationFailed .en__field__element input[type="text"], form.en__component .en__field.en__field--validationFailed .en__field__element input[type="email"], form.en__component .en__field.en__field--validationFailed .en__field__element input[type="tel"], form.en__component .en__field.en__field--validationFailed .en__field__element input[type="date"], form.en__component .en__field.en__field--validationFailed .en__field__element select, form[name="oneClickDonFrm"] .en__field.en__field--validationFailed .en__field__element input[type="text"], form[name="oneClickDonFrm"] .en__field.en__field--validationFailed .en__field__element input[type="email"], form[name="oneClickDonFrm"] .en__field.en__field--validationFailed .en__field__element input[type="tel"], form[name="oneClickDonFrm"] .en__field.en__field--validationFailed .en__field__element input[type="date"], form[name="oneClickDonFrm"] .en__field.en__field--validationFailed .en__field__element select {
+        border: 1px solid #f00; }
+      form.en__component .en__field.en__field--taxdeductible > .en__field__label, form[name="oneClickDonFrm"] .en__field.en__field--taxdeductible > .en__field__label {
+        display: none; }
+      form.en__component .en__field.en__field--taxdeductible .en__field__element, form[name="oneClickDonFrm"] .en__field.en__field--taxdeductible .en__field__element {
+        width: 100%;
+        max-width: 500px;
+        float: left; }
+    form.en__component .en__field__error, form[name="oneClickDonFrm"] .en__field__error {
+      color: #f00;
+      font-size: 13px;
+      text-align: left;
+      margin-top: 10px; }
+    form.en__component .apple-pay-disclaimer, form[name="oneClickDonFrm"] .apple-pay-disclaimer {
+      color: #f00;
+      position: relative;
+      float: left;
+      width: 100%;
+      text-align: center;
+      line-height: 1.1;
+      margin-top: 5px;
+      font-size: 14px;
+      font-style: italic; }
+    form.en__component .en__submit .apple-pay-disclaimer, form[name="oneClickDonFrm"] .en__submit .apple-pay-disclaimer {
+      margin-top: -20px;
+      margin-bottom: 20px; }
+    form.en__component .en__field--recurrpay .en__field__element, form.en__component .en__field--recurrpay > .en__field__label, form[name="oneClickDonFrm"] .en__field--recurrpay .en__field__element, form[name="oneClickDonFrm"] .en__field--recurrpay > .en__field__label {
+      width: 50%;
+      position: relative;
+      float: left; }
+    form.en__component .en__field--recurrpay > .en__field__label, form[name="oneClickDonFrm"] .en__field--recurrpay > .en__field__label {
+      margin-top: 0; }
+    form.en__component .en__field--recurrpay .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field--recurrpay .en__field__element .en__field__item {
+      width: 100%;
+      padding: 0;
+      font-size: 14px; }
+      form.en__component .en__field--recurrpay .en__field__element .en__field__item input[type="radio"], form[name="oneClickDonFrm"] .en__field--recurrpay .en__field__element .en__field__item input[type="radio"] {
+        float: left;
+        margin-top: 4px;
+        margin-right: 8px; }
+    form.en__component .en__field--recurrpay.one-option > label.en__field__label, form[name="oneClickDonFrm"] .en__field--recurrpay.one-option > label.en__field__label {
+      transform: none;
+      top: unset; }
+    form.en__component .en__field--recurrpay.one-option .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field--recurrpay.one-option .en__field__element .en__field__item {
+      font-size: 16px;
+      font-weight: 500; }
+    form.en__component .en__component--formblock.giftstring-component, form[name="oneClickDonFrm"] .en__component--formblock.giftstring-component {
+      margin-bottom: 25px; }
+    form.en__component .en__field.en__field--donationAmt > label.en__field__label, form.en__component .en__field__item.enDonationAmount__buttons > label.en__field__label, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt > label.en__field__label, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons > label.en__field__label {
+      display: none; }
+    form.en__component .en__field.en__field--donationAmt .en__field__element, form.en__component .en__field__item.enDonationAmount__buttons .en__field__element, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__element, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__element {
+      width: 100%; }
+    form.en__component .en__field.en__field--donationAmt .en__field__item, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item {
+      position: relative;
+      float: left;
+      max-width: 85px;
+      width: 85px;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+      line-height: 0;
+      padding: 0;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      /* gift string other */ }
+      form.en__component .en__field.en__field--donationAmt .en__field__item.active, form.en__component .en__field.en__field--donationAmt .en__field__item:hover, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item.active, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item:hover, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item.active, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item:hover, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.active, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:hover {
+        background-color: #ffdc0c;
+        color: #000; }
+      form.en__component .en__field.en__field--donationAmt .en__field__item input[type="radio"]:checked + label, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item input[type="radio"]:checked + label, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item input[type="radio"]:checked + label, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item input[type="radio"]:checked + label {
+        background-color: #ffdc0c;
+        color: #000; }
+      form.en__component .en__field.en__field--donationAmt .en__field__item label, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item label, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item label, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item label {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 22px 0;
+        line-height: 0;
+        display: block;
+        cursor: pointer;
+        width: 100%; }
+      form.en__component .en__field.en__field--donationAmt .en__field__item input[type="radio"], form.en__component .en__field__item.enDonationAmount__buttons .en__field__item input[type="radio"], form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item input[type="radio"], form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item input[type="radio"] {
+        display: none; }
+      form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item.en__field__item--other, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other {
+        border: 1px solid #ffdc0c;
+        background: none;
+        color: #000;
+        text-align: left; }
+        form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other .other-prefix, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other .other-prefix, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item.en__field__item--other .other-prefix, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other .other-prefix {
+          position: relative;
+          float: left;
+          width: 20px;
+          line-height: 100%;
+          margin: 13px 0 10px 5px;
+          text-align: center; }
+        form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other .en__field__input--other, form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other .en__field__input, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other .en__field__input--other, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other .en__field__input, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item.en__field__item--other .en__field__input--other, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item.en__field__item--other .en__field__input, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other .en__field__input--other, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other .en__field__input {
+          margin: 0;
+          border-width: 0;
+          width: 55px;
+          height: 42px;
+          padding: 15px 5px;
+          margin: 0;
+          outline: none;
+          box-sizing: border-box; }
+        form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other:hover, form.en__component .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other:hover, form[name="oneClickDonFrm"] .en__field.en__field--donationAmt .en__field__item.en__field__item--other:hover, form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other:hover {
+          background: none; }
+    form.en__component .en__field--splitselect.en__field--ccexpire .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field--splitselect.en__field--ccexpire .en__field__element .en__field__item {
+      width: 100px; }
+    form.en__component .en__field--ccvv .en__field__element input[type="tel"], form[name="oneClickDonFrm"] .en__field--ccvv .en__field__element input[type="tel"] {
+      width: 75%;
+      max-width: 350px;
+      float: left; }
+    form.en__component .en__field--ccvv .en__field__element .ccvHelper, form[name="oneClickDonFrm"] .en__field--ccvv .en__field__element .ccvHelper {
+      float: left;
+      margin-top: 11px;
+      margin-left: 5px; }
+      form.en__component .en__field--ccvv .en__field__element .ccvHelper img, form[name="oneClickDonFrm"] .en__field--ccvv .en__field__element .ccvHelper img {
+        width: 25px;
+        cursor: pointer; }
+    form.en__component .en__field--question.en__field--radio .en__field__element .en__field__item, form[name="oneClickDonFrm"] .en__field--question.en__field--radio .en__field__element .en__field__item {
+      width: auto;
+      margin-right: 15px; }
+    form.en__component .en__field--478149, form[name="oneClickDonFrm"] .en__field--478149 {
+      margin-top: 10px;
+      line-height: 120%; }
+      form.en__component .en__field--478149 .en__field__error, form[name="oneClickDonFrm"] .en__field--478149 .en__field__error {
+        margin-top: -20px;
+        margin-bottom: 20px; }
+    form.en__component .signup_disclaimer, form[name="oneClickDonFrm"] .signup_disclaimer {
+      font-size: 12px;
+      color: #d5d5d5;
+      margin-top: 5px;
+      line-height: 125%; }
+    form.en__component .en__submit, form[name="oneClickDonFrm"] .en__submit {
+      text-align: center; }
+    form.en__component #customPayment input, form[name="oneClickDonFrm"] #customPayment input {
+      margin-right: 5px; }
+    form.en__component #customPayment label, form[name="oneClickDonFrm"] #customPayment label {
+      margin-right: 10px; }
+    form.en__component .en__field--region .en__field__input--other, form.en__component .en__field--infreg .en__field__input--other, form[name="oneClickDonFrm"] .en__field--region .en__field__input--other, form[name="oneClickDonFrm"] .en__field--infreg .en__field__input--other {
+      margin-left: 0; }
+    form.en__component .en__field--NOT_TAGGED_29, form[name="oneClickDonFrm"] .en__field--NOT_TAGGED_29 {
+      display: none; }
+  
+  /* donation submit button */
+  .en__submit button, .oneclick-type input.eaSubmitButton {
+    font-size: 18px;
+    text-align: center;
+    background: #ffdc0c;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .15em;
+    word-spacing: .22em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: 30px 0;
+    border-radius: 0;
+    border: none;
+    min-height: 60px;
+    min-width: 250px;
+    transition-duration: 400ms; }
+    .en__submit button:hover, .oneclick-type input.eaSubmitButton:hover {
+      color: #fff;
+      background: #000; }
+    .en__submit button:disabled, .en__submit button:disabled:hover, .oneclick-type input.eaSubmitButton:disabled, .oneclick-type input.eaSubmitButton:disabled:hover {
+      background-color: #d5d5d5;
+      color: #959595;
+      cursor: not-allowed; }
+  
+  .oneclick-type input.eaSubmitButton {
+    clear: both;
+    float: left;
+    display: block;
+    cursor: pointer; }
+  
+  .subscribe-type form.en__component .en__field > .en__field__label {
+    text-align: right;
+    width: calc(49.25% - 20px);
+    margin-right: 20px; }
+  
+  .subscriptions-type.landing #feature {
+    display: none; }
+  
+  .subscriptions-type form.en__component .en__field.en__field--text.en__mandatory > label:after {
+    content: none; }
+  
+  .en__errorHeader {
+    color: #f00;
+    font-weight: bold;
+    letter-spacing: .25px; }
+  
+  .en__errorList {
+    color: #f00;
+    list-style: none; }
+  
+  body.confirmation .social-share {
+    margin-bottom: 10px;
+    text-align: center; }
+    body.confirmation .social-share a {
+      display: block;
+      clear: both; }
+  
+  @media screen and (max-width: 599px) {
+    form.en__component .en__field > .en__field__label, form.en__component .en__field .en__field__element {
+      width: 100%;
+      margin-right: 0; }
+    form.en__component .en__field.en__field--radio > label.en__field__label, form.en__component .en__field.en__field--checkbox > label.en__field__label {
+      position: relative;
+      float: left;
+      top: unset;
+      transform: unset;
+      vertical-align: top; }
+    form.en__component .en__field.en__field--splitselect .en__field__element .en__field__item {
+      width: 100%; }
+      form.en__component .en__field.en__field--splitselect .en__field__element .en__field__item:first-of-type {
+        margin-right: 0;
+        margin-bottom: 9px; }
+    form.en__component .en__field.en__field--recurrpay > .en__field__label {
+      margin-top: 10px; }
+    form.en__component .en__field.en__field--recurrpay > .en__field__label {
+      width: 40%; }
+    form.en__component .en__field.en__field--recurrpay .en__field__element {
+      width: 60%; }
+    form.en__component .en__field.en__field--donationAmt .en__field__item {
+      margin-right: 10px;
+      margin-bottom: 10px; }
+    form.en__component .en__field.en__field--ccexpire .en__field__element .en__field__item {
+      width: 150px; }
+    form.en__component .en__field .en__field__element .en__field__item {
+      margin-bottom: 8px; }
+    .subscribe-type form.en__component .en__field > .en__field__label {
+      text-align: left; }
+    body.confirmation .social-share {
+      margin-top: -5px;
+      margin-bottom: 5px; } }
+  
+  html {
+    font-size: 87.5%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    line-height: 1.46667em; }
+  
+  html, button, input, select, textarea {
+    font-family: "GeographWeb",Helvetica,Arial,sans-serif; }
+  
+  h1, h2, h3, h4, p, ul, ol {
+    margin: 0 0 20px; }
+  
+  h1 {
+    font-size: 2.25em;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: .13em;
+    word-spacing: .05em;
+    text-transform: uppercase; }
+  
+  h2 {
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: 400;
+    /*letter-spacing: .13em;
+    word-spacing: .05em;*/
+    text-transform: uppercase; }
+  
+  h3 {
+    font-size: 1.17em;
+    line-height: 1.25356em; }
+  
+  p.tribute-link {
+    margin-top: -40px;
+    margin-bottom: 40px; }
+  
+  p.tribute-link a, p a {
+    cursor: pointer;
+    border-bottom: 1px solid #fc0;
+    text-decoration: none;
+    color: #000; }
+  
+  p.tribute-link a:hover {
+    border-bottom: 1px solid #000; }
+  
+  #content {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px 0; }
+    #content .en__component--copyblock.intro-text {
+      margin-bottom: 40px;
+      max-width: 100%; }
+    #content .callout {
+      border: 5px solid #ffdc0c;
+      padding: 20px 20px 0 20px; }
+      #content .callout h1, #content .callout h2 {
+        margin-bottom: 10px; }
+  
+  @media screen and (max-width: 599px) {
+    h1 {
+      font-size: 2em;
+      line-height: 1.25; }
+    h2 {
+      font-size: 1.75em;
+      line-height: 1.25; } }
+  
+  @media screen and (max-width: 479px) {
+    h1 {
+      font-size: 1.75em;
+      line-height: 1.25; }
+    h2 {
+      font-size: 1.25em;
+      line-height: 1.25; } }
+  
+  .subscribe-type.confirmation #content {
+    margin-bottom: 50px; }
+  
+  .subscribe-type.confirmation h2 {
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: none; }
+  
+  .subscribe-type.confirmation p {
+    font-size: 13.5px;
+    line-height: 21px; }
+  
+  .donate-type.confirmation h2 {
+    padding: 20px 0 0 0;
+    margin: 0; }
+  
+  .donate-type.confirmation .container a {
+    color: #2469a0;
+    font-weight: bold; }
+  
+  .donate-type.confirmation .receipt-line {
+    display: inline-block;
+    width: 100%; }
+  
+  .donate-type.confirmation .receipt-designation, .donate-type.confirmation .receipt-recurring, .donate-type.confirmation .receipt-creditcard, .donate-type.confirmation .receipt-tribute, .donate-type.confirmation .receipt-tribute-letter {
+    display: none; }
+  
+  .modal-wrap {
+    max-width: 300px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    outline: none;
+    padding: 15px;
+    padding-top: 0;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  .modal-close {
+    padding: 9px 0;
+    border-bottom: 1px solid #eee; }
+    .modal-close button {
+      background: #515350;
+      color: #fff;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      line-height: 1;
+      margin: 0;
+      cursor: pointer; }
+  
+  .modal-text {
+    padding-top: 15px; }
+  
+  .hide {
+    display: none !important; }
+  
+  .center {
+    text-align: center; }
+  
+  .tipprompt {
+    position: absolute;
+    right: -30px;
+    top: 13px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: #cfcfcf;
+    color: #000;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer; }
+  
+  .warning {
+    position: fixed;
+    width: 100%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    z-index: 999;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 5px;
+    opacity: 0.75;
+    top: 10px; }
+    .warning.second-warning {
+      margin-top: 60px; }
+  
+  body.mr-promo-noscroll {
+    overflow: hidden; }
+  
+  .mr-promo {
+    position: absolute;
+    z-index: 9999;
+    background: white; }
+    .mr-promo.is-hidden {
+      display: none; }
+    .mr-promo.is-upsell {
+      top: 50%;
+      left: 50%;
+      margin: auto;
+      transform: translate(-50%, -50%); }
+    .mr-promo.is-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%; }
+  
+  .mr-promo__overlay {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9998; }
+  
+  .mr-promo.is-upsell {
+    width: 90%;
+    max-width: 530px;
+    padding: 20px 40px 50px 40px;
+    background: #212121;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .mr-promo.is-upsell .mr-promo__close-wrapper {
+      text-align: right; }
+      .mr-promo.is-upsell .mr-promo__close-wrapper .js-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0; }
+        .mr-promo.is-upsell .mr-promo__close-wrapper .js-close .x--right:after {
+          display: inline-block;
+          color: #fff;
+          content: url('data:image/svg+xml; utf8, <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="iconmonstr-x-mark-1" fill="%23FFFFFF"><polygon id="Path" points="20 16.8233333 13.0708333 9.9825 19.9041667 3.08083333 16.8233333 -8.8817842e-16 9.98 6.93166667 3.055 0.0958333333 -1.33226763e-15 3.15083333 6.93416667 10.0175 0.0958333333 16.945 3.15083333 20 10.015 13.0683333 16.9191667 19.9041667"></polygon></g></g></svg>');
+          width: 20px;
+          height: 20px; }
+    .mr-promo.is-upsell .mr-promo__outer-wrapper {
+      margin-top: 25px; }
+    .mr-promo.is-upsell .mr-promo__content h3 {
+      margin: 0 auto 35px auto;
+      border-left: 3px solid #ffcc00;
+      padding-left: 30px;
+      font-size: 50px;
+      line-height: 35px;
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      width: 310px; }
+      .mr-promo.is-upsell .mr-promo__content h3 span {
+        display: inline-block;
+        font-size: 26px;
+        color: #ffcc00;
+        letter-spacing: initial; }
+    .mr-promo.is-upsell .mr-promo__content p {
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 24px; }
+      .mr-promo.is-upsell .mr-promo__content p span {
+        color: #ffcc00; }
+    .mr-promo.is-upsell .mr-promo__content button {
+      width: 100%;
+      padding: 0;
+      border: 1px solid black;
+      padding: 10px 0 12px 0;
+      font-size: 12.5px;
+      line-height: 120%;
+      font-weight: 500;
+      cursor: pointer; }
+      .mr-promo.is-upsell .mr-promo__content button span {
+        font-size: 15.5px;
+        line-height: 120%; }
+      .mr-promo.is-upsell .mr-promo__content button.is-accept {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        /*border-color: $lbRed;
+            background: $lbRed;
+            color: #fff;*/
+        color: #000;
+        background: #fff;
+        border-color: #fff; }
+        .mr-promo.is-upsell .mr-promo__content button.is-accept:hover {
+          /*color: #000;
+              background: $lbYellow;
+              border-color: $lbYellow;*/
+          color: #000;
+          background: #ffcc00;
+          border-color: #ffcc00; }
+      .mr-promo.is-upsell .mr-promo__content button.is-reject {
+        /*border-color: $lbGrey;
+            color: $lbGrey;
+            background: none;*/
+        color: #000;
+        background: #fff;
+        border-color: #fff; }
+        .mr-promo.is-upsell .mr-promo__content button.is-reject:hover {
+          color: #000;
+          background: #ffcc00;
+          border-color: #ffcc00; }
+  
+  @media screen and (max-width: 599px) {
+    .mr-promo.is-upsell {
+      padding: 20px 30px 30px 30px; }
+      .mr-promo.is-upsell .mr-promo__outer-wrapper {
+        margin-top: 15px; }
+      .mr-promo.is-upsell .mr-promo__content h3 {
+        margin-bottom: 15px;
+        font-size: 38px;
+        width: 240px;
+        line-height: 25px;
+        padding-left: 20px; }
+        .mr-promo.is-upsell .mr-promo__content h3 span {
+          font-size: 20px; }
+      .mr-promo.is-upsell .mr-promo__content p {
+        margin-bottom: 15px; } }
+  
+  @media screen and (max-width: 479px) {
+    .mr-promo.is-upsell {
+      padding: 20px; }
+      .mr-promo.is-upsell .mr-promo__outer-wrapper {
+        margin-top: 0; }
+      .mr-promo.is-upsell .mr-promo__close-wrapper .js-close .x--right:after {
+        content: url('data:image/svg+xml; utf8, <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Path" fill="%23FFFFFF"><polygon points="15 12.6175 9.80312498 7.486875 14.928125 2.310625 12.6175 -1.77635684e-15 7.485 5.19875 2.29125 0.071875 -1.77635684e-15 2.363125 5.200625 7.513125 0.071875 12.70875 2.363125 15 7.51125 9.80124998 12.689375 14.928125"></polygon></g></g></svg>');
+        width: 15px;
+        height: 15px; }
+      .mr-promo.is-upsell .mr-promo__content h3 {
+        border-left: none;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px; }
+        .mr-promo.is-upsell .mr-promo__content h3 span {
+          font-size: 18px;
+          width: 100%; }
+      .mr-promo.is-upsell .mr-promo__content p {
+        font-size: 15px;
+        line-height: 20px; } }
+  
+  body.survey-type form.en__component .en__field.en__field--survey label:not(.en__field__label--item) {
+    position: relative;
+    top: unset;
+    transform: unset;
+    vertical-align: top;
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px; }
+  
+  body.survey-type form.en__component .en__field.en__field--survey .en__field__element {
+    float: left;
+    width: 100%; }
+  
+  body.hub-type {
+    overflow-y: initial !important;
+    /* header logout link */
+    /* general */
+    /* login page */ }
+    body.hub-type #feature {
+      background: #fff; }
+    body.hub-type #header .logout {
+      float: right;
+      margin-top: 20px; }
+      body.hub-type #header .logout a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+        background: #ffdc0c;
+        color: #000;
+        font-weight: 500;
+        letter-spacing: .15em;
+        word-spacing: .22em;
+        padding: 8px 16px;
+        transition-duration: 400ms; }
+    body.hub-type form.en__component .en__component--row {
+      width: 100%; }
+      body.hub-type form.en__component .en__component--row .en__component--row {
+        display: table-cell; }
+      body.hub-type form.en__component .en__component--row .en__component.en__component--hubgadget {
+        box-shadow: none; }
+        body.hub-type form.en__component .en__component--row .en__component.en__component--hubgadget:hover {
+          cursor: pointer; }
+    body.hub-type form.en__component .en__component--column > .en__component.en__component--hubgadget > span {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 15px;
+      text-align: center;
+      background: #ffdc0c;
+      color: #000;
+      font-weight: 500;
+      letter-spacing: .15em;
+      word-spacing: .22em;
+      padding: 8px 0;
+      transition-duration: 400ms; }
+    body.hub-type form.en__component .en__hubOverlay {
+      /* general overlay */ }
+      body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content {
+        position: relative;
+        float: left;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        /* overlay form fields */ }
+        body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__hubPledge__panel {
+          position: relative;
+          float: left;
+          width: 100%; }
+        body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__button.en__button--close {
+          background: #F5F5F5; }
+          body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__button.en__button--close:hover {
+            background-color: #000; }
+        body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__field.en__field--donationAmt {
+          position: relative;
+          float: left;
+          width: 100%;
+          padding-bottom: 18px; }
+          body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__field.en__field--donationAmt .en__field__element {
+            width: 50.75%; }
+          body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__field.en__field--donationAmt > label {
+            width: calc(49.25% - 10px);
+            margin-right: 10px;
+            margin-top: 6px;
+            display: block; }
+        body.hub-type form.en__component .en__hubOverlay .en__hubOverlay__content .en__hubUpdateCC__number {
+          display: block; }
+      body.hub-type form.en__component .en__hubOverlay.en__hubOverlay--supporterdetails {
+        /*  */ }
+        body.hub-type form.en__component .en__hubOverlay.en__hubOverlay--supporterdetails .en__button.en__button--submit {
+          display: none; }
+      body.hub-type form.en__component .en__hubOverlay.en__hubOverlay--pledge select[name="uiPaymentstatus"] {
+        display: none; }
+      body.hub-type form.en__component .en__hubOverlay.en__hubOverlay--pledge .new-options {
+        margin-top: 5px; }
+        body.hub-type form.en__component .en__hubOverlay.en__hubOverlay--pledge .new-options label {
+          margin-right: 10px; }
+          body.hub-type form.en__component .en__hubOverlay.en__hubOverlay--pledge .new-options label input[type="radio"] {
+            margin-right: 5px; }
+    body.hub-type #content .en__component--copyblock.intro-text p {
+      text-align: center; }
+    body.hub-type .image-credit {
+      display: none; }
+    body.hub-type .en__supporterHubLogin {
+      width: 100%;
+      max-width: 450px;
+      margin-bottom: 50px; }
+      body.hub-type .en__supporterHubLogin .en__field--hublogin input[type="text"],
+      body.hub-type .en__supporterHubLogin .en__field--hublogin input[type="email"] {
+        width: 100%; }
+      body.hub-type .en__supporterHubLogin .en__submit button {
+        margin: 10px 0 0 0;
+        width: 100%; }
+      body.hub-type .en__supporterHubLogin .hub-intro-help {
+        margin-top: 24px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.2;
+        font-style: italic; }
+  
+  #feature .bar {
+    display: none; }
+  
+  #headerMobile {
+    display: none; }
+  
+  .logo-wrap a img.mobile, .logo-wrap a svg.mobile {
+    display: none; }
+  
+  label[for="customPayment"] {
+    display: none; }
+  
+  body.redesign.white-logo .logo-wrap a img.mobile, body.redesign.white-logo .logo-wrap a svg.mobile {
+    display: block; }
+  
+  body.redesign.white-logo .logo-wrap a img.desktop, body.redesign.white-logo .logo-wrap a svg.desktop {
+    display: none; }
+  
+  body.donate-type.redesign, body.oneclick-type.redesign, body.redesign {
+    background-color: #787878;
+    background-position: 10% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+    body.donate-type.redesign #header, body.donate-type.redesign #headerMobile, body.oneclick-type.redesign #header, body.oneclick-type.redesign #headerMobile, body.redesign #header, body.redesign #headerMobile {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 40px;
+      position: sticky;
+      background-position: 10% top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+      top: 0; }
+      body.donate-type.redesign #header .logo-wrap, body.donate-type.redesign #headerMobile .logo-wrap, body.oneclick-type.redesign #header .logo-wrap, body.oneclick-type.redesign #headerMobile .logo-wrap, body.redesign #header .logo-wrap, body.redesign #headerMobile .logo-wrap {
+        width: 100%;
+        max-width: 960px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto; }
+        body.donate-type.redesign #header .logo-wrap a img, body.donate-type.redesign #header .logo-wrap a svg, body.donate-type.redesign #headerMobile .logo-wrap a img, body.donate-type.redesign #headerMobile .logo-wrap a svg, body.oneclick-type.redesign #header .logo-wrap a img, body.oneclick-type.redesign #header .logo-wrap a svg, body.oneclick-type.redesign #headerMobile .logo-wrap a img, body.oneclick-type.redesign #headerMobile .logo-wrap a svg, body.redesign #header .logo-wrap a img, body.redesign #header .logo-wrap a svg, body.redesign #headerMobile .logo-wrap a img, body.redesign #headerMobile .logo-wrap a svg {
+          max-height: 50px;
+          height: 50px; }
+    body.donate-type.redesign #headerMobile, body.oneclick-type.redesign #headerMobile, body.redesign #headerMobile {
+      display: none; }
+    body.donate-type.redesign #feature, body.oneclick-type.redesign #feature, body.redesign #feature {
+      background: none;
+      width: 100%;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; }
+      body.donate-type.redesign #feature img, body.oneclick-type.redesign #feature img, body.redesign #feature img {
+        display: none; }
+      body.donate-type.redesign #feature .bar, body.oneclick-type.redesign #feature .bar, body.redesign #feature .bar {
+        display: block;
+        position: fixed;
+        height: 10px;
+        width: calc(100% - 80px);
+        max-width: 430px;
+        max-width: 475px;
+        background-color: #fff;
+        background-color: #fff;
+        z-index: 200;
+        top: 130px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin-left: 40px;
+        margin-right: 40px; }
+    body.donate-type.redesign .wrapper#content, body.oneclick-type.redesign .wrapper#content, body.redesign .wrapper#content {
+      width: 100%;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+      margin-top: 130px; }
+      body.donate-type.redesign .wrapper#content .container, body.oneclick-type.redesign .wrapper#content .container, body.redesign .wrapper#content .container {
+        max-width: 430px;
+        max-width: 475px;
+        background-color: #fff;
+        padding: 40px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto; }
+    body.donate-type.redesign.survey-type #feature .bar, body.oneclick-type.redesign.survey-type #feature .bar, body.redesign.survey-type #feature .bar {
+      max-width: 675px; }
+    body.donate-type.redesign.survey-type .wrapper#content .container, body.oneclick-type.redesign.survey-type .wrapper#content .container, body.redesign.survey-type .wrapper#content .container {
+      max-width: 675px; }
+    body.donate-type.redesign h1, body.oneclick-type.redesign h1, body.redesign h1 {
+      line-height: 1.25; }
+    body.donate-type.redesign h2, body.oneclick-type.redesign h2, body.redesign h2 {
+      font-size: 1.65em; }
+    body.donate-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons, body.oneclick-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons, body.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons {
+      width: 100%; }
+      body.donate-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item, body.oneclick-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item, body.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item {
+        width: calc(calc(100%/3) - 6px);
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px; }
+        body.donate-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other, body.oneclick-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other, body.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item.en__field__item--other {
+          width: calc(calc(100%/3) - 8px);
+          margin-left: 9px; }
+        body.donate-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:nth-of-type(3n - 1), body.oneclick-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:nth-of-type(3n - 1), body.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:nth-of-type(3n - 1) {
+          margin-left: 9px; }
+        body.donate-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:nth-of-type(3n), body.oneclick-type.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:nth-of-type(3n), body.redesign form[name="oneClickDonFrm"] .en__field__item.enDonationAmount__buttons .en__field__item:nth-of-type(3n) {
+          margin-left: 9px; }
+    body.donate-type.redesign form.en__component .en__field, body.oneclick-type.redesign form.en__component .en__field, body.redesign form.en__component .en__field {
+      margin-bottom: 20px;
+      padding-bottom: 0; }
+      body.donate-type.redesign form.en__component .en__field.giftstring-component, body.oneclick-type.redesign form.en__component .en__field.giftstring-component, body.redesign form.en__component .en__field.giftstring-component {
+        margin-bottom: 0; }
+      body.donate-type.redesign form.en__component .en__field .en__field__element, body.oneclick-type.redesign form.en__component .en__field .en__field__element, body.redesign form.en__component .en__field .en__field__element {
+        float: left;
+        width: 100%; }
+      body.donate-type.redesign form.en__component .en__field > .en__field__label, body.oneclick-type.redesign form.en__component .en__field > .en__field__label, body.redesign form.en__component .en__field > .en__field__label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+        padding-top: 0; }
+        body.donate-type.redesign form.en__component .en__field > .en__field__label:not(.custom-label):after, body.oneclick-type.redesign form.en__component .en__field > .en__field__label:not(.custom-label):after, body.redesign form.en__component .en__field > .en__field__label:not(.custom-label):after {
+          content: '(Optional)';
+          margin-left: 2px;
+          font-size: 12px;
+          color: #cfcfcf; }
+      body.donate-type.redesign form.en__component .en__field.en__mandatory > .en__field__label:after, body.oneclick-type.redesign form.en__component .en__field.en__mandatory > .en__field__label:after, body.redesign form.en__component .en__field.en__mandatory > .en__field__label:after {
+        content: ''; }
+      body.donate-type.redesign form.en__component .en__field.en__field--radio label, body.donate-type.redesign form.en__component .en__field.en__field--radio label.en__field__label, body.donate-type.redesign form.en__component .en__field.en__field--recurrpay label, body.donate-type.redesign form.en__component .en__field.en__field--recurrpay label.en__field__label, body.oneclick-type.redesign form.en__component .en__field.en__field--radio label, body.oneclick-type.redesign form.en__component .en__field.en__field--radio label.en__field__label, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay label, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay label.en__field__label, body.redesign form.en__component .en__field.en__field--radio label, body.redesign form.en__component .en__field.en__field--radio label.en__field__label, body.redesign form.en__component .en__field.en__field--recurrpay label, body.redesign form.en__component .en__field.en__field--recurrpay label.en__field__label {
+        position: relative;
+        top: unset;
+        transform: none; }
+      body.donate-type.redesign form.en__component .en__field.en__field--ccvv .en__field__element input[type="tel"], body.oneclick-type.redesign form.en__component .en__field.en__field--ccvv .en__field__element input[type="tel"], body.redesign form.en__component .en__field.en__field--ccvv .en__field__element input[type="tel"] {
+        max-width: 213px; }
+      body.donate-type.redesign form.en__component .en__field.en__field--478149, body.oneclick-type.redesign form.en__component .en__field.en__field--478149, body.redesign form.en__component .en__field.en__field--478149 {
+        margin-top: 0; }
+        body.donate-type.redesign form.en__component .en__field.en__field--478149 > label, body.oneclick-type.redesign form.en__component .en__field.en__field--478149 > label, body.redesign form.en__component .en__field.en__field--478149 > label {
+          margin-bottom: 6px; }
+      body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item {
+        width: calc(calc(100%/3) - 6px);
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px; }
+        body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.en__field__item--other {
+          width: calc(calc(100%/3) - 8px);
+          margin-left: 9px; }
+        body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.other-field-item, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.other-field-item, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.other-field-item {
+          margin-left: 9px; }
+        body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item:nth-of-type(3n - 1), body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item:nth-of-type(3n - 1), body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item:nth-of-type(3n - 1) {
+          margin-left: 9px; }
+        body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item:nth-of-type(3n), body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item:nth-of-type(3n), body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item:nth-of-type(3n) {
+          margin-left: 9px; }
+        body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring, body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time {
+          margin-left: 0; }
+          body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring.second, body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time.second, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring.second, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time.second, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring.second, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time.second {
+            margin-left: 9px; }
+          body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring.last, body.donate-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time.last, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring.last, body.oneclick-type.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time.last, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.recurring.last, body.redesign form.en__component .en__field.en__field--donationAmt .en__field__item.one-time.last {
+            margin-left: 9px; }
+      body.donate-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item, body.redesign form.en__component .en__field.en__field--recurrpay .en__field__item {
+        position: relative;
+        float: left;
+        width: calc(50% - 5px);
+        background-color: #000;
+        color: #fff; }
+        body.donate-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item input[type="radio"], body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item input[type="radio"], body.redesign form.en__component .en__field.en__field--recurrpay .en__field__item input[type="radio"] {
+          display: none; }
+          body.donate-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item input[type="radio"]:checked + label, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item input[type="radio"]:checked + label, body.redesign form.en__component .en__field.en__field--recurrpay .en__field__item input[type="radio"]:checked + label {
+            color: #000;
+            background-color: #ffdc0c; }
+        body.donate-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item label, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item label, body.redesign form.en__component .en__field.en__field--recurrpay .en__field__item label {
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+          padding: 22px 0;
+          line-height: 0; }
+        body.donate-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item:first-of-type, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item:first-of-type, body.redesign form.en__component .en__field.en__field--recurrpay .en__field__item:first-of-type {
+          margin-right: 10px; }
+        body.donate-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item:hover, body.oneclick-type.redesign form.en__component .en__field.en__field--recurrpay .en__field__item:hover, body.redesign form.en__component .en__field.en__field--recurrpay .en__field__item:hover {
+          color: #000;
+          background-color: #ffdc0c; }
+      body.donate-type.redesign form.en__component .en__field#customPayment input[type="radio"], body.oneclick-type.redesign form.en__component .en__field#customPayment input[type="radio"], body.redesign form.en__component .en__field#customPayment input[type="radio"] {
+        display: none; }
+        body.donate-type.redesign form.en__component .en__field#customPayment input[type="radio"]:checked + label, body.oneclick-type.redesign form.en__component .en__field#customPayment input[type="radio"]:checked + label, body.redesign form.en__component .en__field#customPayment input[type="radio"]:checked + label {
+          color: #000;
+          background-color: #ffdc0c; }
+        body.donate-type.redesign form.en__component .en__field#customPayment input[type="radio"]:disabled + label, body.oneclick-type.redesign form.en__component .en__field#customPayment input[type="radio"]:disabled + label, body.redesign form.en__component .en__field#customPayment input[type="radio"]:disabled + label {
+          background-color: #d5d5d5;
+          color: #959595;
+          cursor: not-allowed; }
+      body.donate-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label), body.oneclick-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label), body.redesign form.en__component .en__field#customPayment label:not(.en__field__label) {
+        position: relative;
+        float: left;
+        width: calc(50% - 5px);
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        padding: 14px 0;
+        line-height: 18px;
+        margin-right: 10px;
+        display: block; }
+        body.donate-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label):last-of-type, body.oneclick-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label):last-of-type, body.redesign form.en__component .en__field#customPayment label:not(.en__field__label):last-of-type {
+          margin-right: 0; }
+        body.donate-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label):hover, body.oneclick-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label):hover, body.redesign form.en__component .en__field#customPayment label:not(.en__field__label):hover {
+          color: #000;
+          background-color: #ffdc0c; }
+        body.donate-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label).active, body.oneclick-type.redesign form.en__component .en__field#customPayment label:not(.en__field__label).active, body.redesign form.en__component .en__field#customPayment label:not(.en__field__label).active {
+          line-height: 0; }
+      body.donate-type.redesign form.en__component .en__field#customPayment.three label:not(.en__field__label), body.oneclick-type.redesign form.en__component .en__field#customPayment.three label:not(.en__field__label), body.redesign form.en__component .en__field#customPayment.three label:not(.en__field__label) {
+        width: calc(calc(100%/3) - 8px);
+        margin-right: 9px;
+        height: auto; }
+        body.donate-type.redesign form.en__component .en__field#customPayment.three label:not(.en__field__label):last-of-type, body.oneclick-type.redesign form.en__component .en__field#customPayment.three label:not(.en__field__label):last-of-type, body.redesign form.en__component .en__field#customPayment.three label:not(.en__field__label):last-of-type {
+          margin-right: 0; }
+      body.donate-type.redesign form.en__component .en__field#customPayment.four label:not(.en__field__label), body.oneclick-type.redesign form.en__component .en__field#customPayment.four label:not(.en__field__label), body.redesign form.en__component .en__field#customPayment.four label:not(.en__field__label) {
+        width: calc(calc(100%/2) - 8px);
+        margin-right: 9px;
+        margin-bottom: 8px;
+        height: auto; }
+        body.donate-type.redesign form.en__component .en__field#customPayment.four label:not(.en__field__label):nth-of-type(odd), body.oneclick-type.redesign form.en__component .en__field#customPayment.four label:not(.en__field__label):nth-of-type(odd), body.redesign form.en__component .en__field#customPayment.four label:not(.en__field__label):nth-of-type(odd) {
+          margin-right: 0; }
+    body.donate-type.redesign form.en__component.markRequired .en__field > .en__field__label:not(.custom-label):after, body.oneclick-type.redesign form.en__component.markRequired .en__field > .en__field__label:not(.custom-label):after, body.redesign form.en__component.markRequired .en__field > .en__field__label:not(.custom-label):after {
+      content: ''; }
+    body.donate-type.redesign form.en__component.markRequired .en__field.en__mandatory > .en__field__label:after, body.oneclick-type.redesign form.en__component.markRequired .en__field.en__mandatory > .en__field__label:after, body.redesign form.en__component.markRequired .en__field.en__mandatory > .en__field__label:after {
+      position: absolute;
+      content: '*';
+      color: #f00;
+      margin-left: 2px;
+      font-size: 20px; }
+    body.donate-type.redesign form.en__component label[for="customPayment"], body.oneclick-type.redesign form.en__component label[for="customPayment"], body.redesign form.en__component label[for="customPayment"] {
+      display: block; }
+    body.donate-type.redesign form.en__component .image-credit, body.oneclick-type.redesign form.en__component .image-credit, body.redesign form.en__component .image-credit {
+      margin-bottom: 0; }
+    body.donate-type.redesign .en__submit button, body.oneclick-type.redesign .en__submit button, body.redesign .en__submit button {
+      letter-spacing: unset;
+      min-width: 200px; }
+  
+  body.oneclick-type.redesign .wrapper#content .container {
+    float: left;
+    margin-bottom: 40px; }
+  
+  body.oneclick-type.redesign .wrapper#content input.eaSubmitButton {
+    margin-top: 0; }
+  
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+    body.donate-type.redesign .en__component--row, body.donate-type.redesign .en__component--row.en__component--advrow,
+    body.oneclick-type.redesign .en__component--row,
+    body.oneclick-type.redesign .en__component--row.en__component--advrow,
+    body.redesign .en__component--row,
+    body.redesign .en__component--row.en__component--advrow {
+      display: flex; } }
+  
+  @media screen and (max-width: 525px) {
+    body.donate-type.redesign,
+    body.oneclick-type.redesign,
+    body.redesign {
+      background: none !important; }
+      body.donate-type.redesign #header,
+      body.oneclick-type.redesign #header,
+      body.redesign #header {
+        display: none; }
+      body.donate-type.redesign #headerMobile,
+      body.oneclick-type.redesign #headerMobile,
+      body.redesign #headerMobile {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 40px 0;
+        background-size: cover;
+        background-attachment: initial; }
+        body.donate-type.redesign #headerMobile .logo-wrap,
+        body.oneclick-type.redesign #headerMobile .logo-wrap,
+        body.redesign #headerMobile .logo-wrap {
+          width: calc(100% - 40px);
+          margin: 0 20px;
+          padding: 0; }
+          body.donate-type.redesign #headerMobile .logo-wrap a img.mobile,
+          body.oneclick-type.redesign #headerMobile .logo-wrap a img.mobile,
+          body.redesign #headerMobile .logo-wrap a img.mobile {
+            display: block; }
+          body.donate-type.redesign #headerMobile .logo-wrap a img.desktop,
+          body.oneclick-type.redesign #headerMobile .logo-wrap a img.desktop,
+          body.redesign #headerMobile .logo-wrap a img.desktop {
+            display: none; }
+      body.donate-type.redesign .wrapper#content,
+      body.oneclick-type.redesign .wrapper#content,
+      body.redesign .wrapper#content {
+        margin-top: 0; }
+        body.donate-type.redesign .wrapper#content .container,
+        body.oneclick-type.redesign .wrapper#content .container,
+        body.redesign .wrapper#content .container {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+          padding: 40px 20px; }
+      body.donate-type.redesign #feature,
+      body.oneclick-type.redesign #feature,
+      body.redesign #feature {
+        display: none; } }
+  
+  .nudge-wrapper {
+    line-height: 1.25;
+    position: relative;
+    width: 100%;
+    width: 100%;
+    float: left;
+    margin-top: 15px; }
+    .nudge-wrapper a {
+      cursor: pointer;
+      border-bottom: 1px solid #fc0;
+      text-decoration: none;
+      color: #000; }
+    .nudge-wrapper .nudge-text {
+      position: relative;
+      width: 100%;
+      font-size: 14px;
+      font-style: italic;
+      max-width: 400px;
+      padding-bottom: 10px; }
+    .nudge-wrapper .nudge-image {
+      position: absolute;
+      width: 22px;
+      bottom: 0;
+      left: 365px;
+      top: -18px; }
+      .nudge-wrapper .nudge-image img {
+        width: 100%;
+        display: block; }
+    .nudge-wrapper.bottom {
+      display: none; }
+      .nudge-wrapper.bottom .nudge-text {
+        float: left;
+        width: calc(100% - 36px); }
+      .nudge-wrapper.bottom .nudge-image {
+        float: left;
+        position: relative;
+        width: 21px;
+        margin-left: 15px;
+        left: unset; }
+  
+  .redesign .nudge-wrapper.top {
+    display: none; }
+  
+  .redesign .nudge-wrapper.bottom {
+    display: block;
+    margin-top: 0; }
+  
+  .redesign .nudge-wrapper .nudge-text {
+    width: 100%;
+    max-width: 100%; }
+  
+  .redesign .nudge-wrapper .nudge-image {
+    position: relative;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0; }
+  
+  .annual-checkbox-wrapper {
+    line-height: 1.25;
+    position: relative;
+    width: calc(100% - 30px);
+    margin: 20px 15px 0 15px;
+    float: left; }
+    .annual-checkbox-wrapper label {
+      display: block;
+      position: relative;
+      padding-left: 19px;
+      cursor: pointer;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 600;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .annual-checkbox-wrapper input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .annual-checkbox-wrapper span.checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 12px;
+      width: 12px;
+      background-color: #fff;
+      border: 1px solid black; }
+      .annual-checkbox-wrapper span.checkmark:after {
+        content: url('data:image/svg+xml; utf8,<svg width="20px" height="15px" viewBox="0 0 50 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><image id="yellow-checkmark" x="0" y="0" width="50" height="38" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAmCAYAAACGeMg8AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAMqADAAQAAAABAAAAJgAAAADgq57pAAADLklEQVRYCdWYW48MQRTHDUvEB/AhhLCLuMs+7Ca7SESCZ8+ePSEusRKXj4LELRabEJeEYF1CQhDx7G1dQhD8f71Tk5rS3VXVvdPdc5L/VNWpU1Xnnzqnqnpafz8untdHslC+3hS2CiPCbSGR+abSJ+Ud+Tks4PctATKJ9AuRlrx9IGyYdbvzO6XaKK1WH4QWsf9IWIHDGTLadCKL5PgTIY8E3D40PbTICR8JiHxqKhGTE+vx0iPv1T824DGqozskJ4xfkFgjzDSNCCQeC8sFn3RIYNik0FogfzhiQ0i8k91qYUZIpElE7smjVW2/8gp2Yq3w2TZqAhHC6angXna2n6bOTiQ5YRSmrDtHYnICEuxEJ5wMCco6dySGxBv5mroThkxdO8I9cV8ISWxIDAnfhUypY0d4dvB24tTxCeG0TsglwSQuEbZ7Qtgn9EKYn7cTYeITk9hdp1PWIDe0JmU43DZeqvJMuz4XBSR8r1izzmtVeJ4EkWCQTeSu2ltQtuW0SmKZsqzEkHimxQinXzGLmtCa0iCbhJnjlCoHTKNgyecpiR3yin0rOz5jo0jIPsmRSypHaGTIWekPZvT51OzEtBCa2NwTX32TpvWzI8vSOhzdSbUPOTpfMyac2AkOgOCccBeHyH5XmdGekP5wRp+rjiFBThB2hUmwOETIj3EaAXJCNsc9dkvUz1M8JCdeyI7E/imUEpPs1zXLnsCZjsjuaIYtO/FQCLmxCyd22tqGCH3nhd1pRim6Y9IBW2LCCRL/PcXtyWLrNhHGXhDGAidhV0yY8VEUetk9ly3fHaVyQuO7ZKCrNdu4oQIyhJtPCLM/wqAQkhN8d3BjR98TGpMref9r7dDIK7mj4zpfyZz7pHRipy3rhpZtc1WNvbaiRJ2c2Cj0hAR+5RGh/5ywnUoJISdWCl9KzOEd6iPCBNeE0HvGXZCc4HT64XbMdTuECGuS+LFkIMFl91vouYQSwRHI7Ar0iO+JTUIlJPAphgj2F4WdVHLkpfoqCSfbh1gijL0sbLMnseqE05DwzdJVUi1CBMcmBZfMtHSV5QRO2FKUCHNAxhwAPBQ3C5XlhNbqkn+H2IfJED03pQAAAABJRU5ErkJggg=="></image></g></svg>');
+        position: absolute;
+        display: none;
+        width: 20px;
+        height: 15px;
+        top: -4px;
+        left: -2px; }
+    .annual-checkbox-wrapper:hover input ~ span.checkmark {
+      background-color: #000; }
+    .annual-checkbox-wrapper input:checked ~ span.checkmark {
+      /*background-color: #2196F3;*/ }
+      .annual-checkbox-wrapper input:checked ~ span.checkmark:after {
+        display: block; }
+  
+  @media screen and (max-width: 530px) {
+    .nudge-wrapper.top {
+      display: none; }
+    .nudge-wrapper.bottom {
+      display: block; } }
+  
+  @media screen and (max-width: 435px) {
+    .nudge-wrapper.bottom {
+      margin-top: 0; }
+      .nudge-wrapper.bottom .nudge-image {
+        margin-left: 105px;
+        top: 0; }
+    .redesign .nudge-wrapper.bottom .nudge-image {
+      margin-left: auto; } }
